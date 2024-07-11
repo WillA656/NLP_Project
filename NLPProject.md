@@ -1,0 +1,11 @@
+
+**NLP PROJECT CLOUD COMPUTING**
+Will Antink and Spencer Veatch
+
+**INTRODUCTION**
+
+**HYPOTHESIS**
+
+**METHODOLOGY**
+
+**EVALUATION**

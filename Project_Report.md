@@ -15,7 +15,8 @@ If our statistical test of choice indicates within a reasonable amount of certai
 We are defining statistical significance as a p-value of less than 0.05 resulting from our hypothesis test. Our corpus consists of ten novels pulled from Project Gutenburg. We utilized an API called Gutendex to query the top ten most popular fantasy novels on the platform and get links to the text of each work. From there, we added the links of all ten works to a text file in github and used bash methods in a colab document to curl each of the text files and assign new names to them. After that, it was only a matter of putting all of the books together in a single large text file we called corpus.txt.
 
 Initially, we had concerns that our data might be polluted by the extra text added to each book by Project Gutenburg. There is a section before the start of each book that lists some basic information such as title and author, as well as a lengthy disclaimer from Project Gutenburg on the use of the books. We were worried that this extraneous text might influence our analysis, but on further inspection realized it contained few to no pronouns, which is really all we were interested in.
---How did we analyze the data?
+
+There were a number of methods at our disposal, and we felt that a chi-squared test was the simplest and most vaiable method of determining whether or not there was a statistically significant difference between the frequencies of these gendered pronouns in our given corpus. The test itself requires little more than count data, and the results are easy to both apply and interperet.
 --Results of our analysis
 
 **EVALUATION**

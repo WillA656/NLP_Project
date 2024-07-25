@@ -19,5 +19,4 @@ Initially, we had concerns that our data might be polluted by the extra text add
 There were a number of methods at our disposal, and we felt that a chi-squared test was the simplest and most vaiable method of determining whether or not there was a statistically significant difference between the frequencies of these gendered pronouns in our given corpus. The test itself requires little more than count data, and the results are easy to both apply and interperet. It was here that we began to really see some of the limitations of using Spark in Colab, particularly because the corpus we had put together was so large. We were finding ourselves stuck with long runtimes and eventually just exported the data and conducted our statistical analysis in R, which was substantially faster.
 
 **EVALUATION**
---Explain results
---Assess hypothesis validity
+Our chi-square test yielded an exceptionally low p-value of 2.2^e-16, and a test statistic of 603.1. These results are extreme enough that we can reject our null hypothesis with a great deal of confidence.

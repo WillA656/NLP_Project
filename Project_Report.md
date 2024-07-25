@@ -16,8 +16,7 @@ We are defining statistical significance as a p-value of less than 0.05 resultin
 
 Initially, we had concerns that our data might be polluted by the extra text added to each book by Project Gutenberg. There is a section before the start of each book that lists some basic information such as title and author, as well as a lengthy disclaimer from Project Gutenberg on the use of the books. We were worried that this extraneous text might influence our analysis, but on further inspection realized it contained few to no pronouns, which is really all we were interested in.
 
-There were a number of methods at our disposal, and we felt that a chi-squared test was the simplest and most vaiable method of determining whether or not there was a statistically significant difference between the frequencies of these gendered pronouns in our given corpus. The test itself requires little more than count data, and the results are easy to both apply and interperet.
---Results of our analysis
+There were a number of methods at our disposal, and we felt that a chi-squared test was the simplest and most vaiable method of determining whether or not there was a statistically significant difference between the frequencies of these gendered pronouns in our given corpus. The test itself requires little more than count data, and the results are easy to both apply and interperet. It was here that we began to really see some of the limitations of using Spark in Colab, particularly because the corpus we had put together was so large. We were finding ourselves stuck with long runtimes and eventually just exported the data and conducted our statistical analysis in R, which was substantially faster.
 
 **EVALUATION**
 --Explain results
